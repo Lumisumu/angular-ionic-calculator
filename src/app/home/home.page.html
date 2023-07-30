@@ -1,0 +1,177 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Calculator 1.0</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <!-- Section where three last sentences are shown -->
+    <div class="history-part">
+      <p type="text" class="history-third-text">{{ historyScreen3 }}</p>
+    </div>
+
+    <div class="history-part">
+      <p type="text" class="history-second-text">{{ historyScreen2 }}</p>
+    </div>
+
+    <div class="history-part">
+      <p type="text" class="history-main-text">{{ historyScreen1 }}</p>
+    </div>
+
+    <!-- Section where typed characters are added-->
+    <div class="active-part">
+      <p type="text">{{ activeScreen }}</p>
+    </div>
+
+    <div class="number-grid">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="1">
+            <ion-button expand="block" (click)="removeAll()" class="grid-button"
+              ><ion-icon name="backspace-outline"></ion-icon
+            ></ion-button>
+          </ion-col>
+          <ion-col size="1">
+            <ion-button
+              expand="block"
+              (click)="copyToClipboard()"
+              class="grid-button"
+              ><ion-icon name="documents-outline"></ion-icon
+            ></ion-button>
+          </ion-col>
+          <ion-col size="1">
+            <ion-button expand="block" (click)="addBracket" class="grid-button"
+              >( )</ion-button
+            >
+          </ion-col>
+          <ion-col size="1">
+            <ion-button
+              expand="block"
+              (click)="addOperator('/')"
+              class="grid-button"
+              >/</ion-button
+            >
+          </ion-col>
+          <ion-col size="1">
+            <ion-button
+              expand="block"
+              (click)="addNumber('7')"
+              class="grid-button"
+              >7</ion-button
+            >
+          </ion-col>
+          <ion-col size="1">
+            <ion-button
+              expand="block"
+              (click)="addNumber('8')"
+              class="grid-button"
+              >8</ion-button
+            >
+          </ion-col>
+          <ion-col size="1">
+            <ion-button
+              expand="block"
+              (click)="addNumber('9')"
+              class="grid-button"
+              >9</ion-button
+            >
+          </ion-col>
+          <ion-col size="1">
+            <ion-button
+              expand="block"
+              (click)="addOperator('*')"
+              class="grid-button"
+              >*</ion-button
+            >
+          </ion-col>
+          <ion-col size="1">
+            <ion-button
+              expand="block"
+              (click)="addNumber('4')"
+              class="grid-button"
+              >4</ion-button
+            >
+          </ion-col>
+          <ion-col size="1">
+            <ion-button
+              expand="block"
+              (click)="addNumber('5')"
+              class="grid-button"
+              >5</ion-button
+            >
+          </ion-col>
+          <ion-col size="1">
+            <ion-button
+              expand="block"
+              (click)="addNumber('6')"
+              class="grid-button"
+              >6</ion-button
+            >
+          </ion-col>
+          <ion-col size="1">
+            <ion-button
+              expand="block"
+              (click)="addOperator('-')"
+              class="grid-button"
+              >-</ion-button
+            >
+          </ion-col>
+          <ion-col size="1">
+            <ion-button
+              expand="block"
+              (click)="addNumber('1')"
+              class="grid-button"
+              >1</ion-button
+            >
+          </ion-col>
+          <ion-col size="1">
+            <ion-button
+              expand="block"
+              (click)="addNumber('2')"
+              class="grid-button"
+              >2</ion-button
+            >
+          </ion-col>
+          <ion-col size="1">
+            <ion-button
+              expand="block"
+              (click)="addNumber('3')"
+              class="grid-button"
+              >3</ion-button
+            >
+          </ion-col>
+          <ion-col size="1">
+            <ion-button
+              expand="block"
+              (click)="addOperator('+')"
+              class="grid-button"
+              >+</ion-button
+            >
+          </ion-col>
+          <ion-col size="1">
+            <ion-button
+              expand="block"
+              (click)="addDecimalPoint()"
+              class="grid-button"
+              >,</ion-button
+            >
+          </ion-col>
+          <ion-col size="1">
+            <ion-button
+              expand="block"
+              (click)="addNumber('0')"
+              class="grid-button"
+              >0</ion-button
+            >
+          </ion-col>
+          <ion-col size="2">
+            <ion-button expand="block" (click)="calculate()" class="grid-button"
+              >=</ion-button
+            >
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>
