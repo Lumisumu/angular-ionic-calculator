@@ -12,7 +12,7 @@ Ionic 7.1.1
 
 Cordova Clipboard 1.3.0
 
-Cordova-res (global install required)
+Cordova-res (global install required):
 
 ```
 npm install -g cordova-res
@@ -26,9 +26,7 @@ Make build into new folder. You can replace android with another platform:
 ionic build android
 ```
 
-If you want to use your own icon and splash, replace them in /resources.
-
-Install cordova-res and copy icons to build folder:
+If you want to use your own icon and splash, replace them in /resources. Copy icons to build folder:
 
 ```
 cordova-res android --skip-config --copy
