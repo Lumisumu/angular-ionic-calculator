@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Clipboard } from '@awesome-cordova-plugins/clipboard/ngx';
 
 @Component({
   selector: 'app-home',
@@ -50,8 +51,6 @@ export class HomePage {
       this.activeScreen += '.';
     }
   }
-
-  public addBracket() {}
 
   public calculate() {
     //If second number was left empty after operator and user presses =, returns result of first number
