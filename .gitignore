@@ -69,3 +69,13 @@ Thumbs.db
 
 # VSCode
 .vscode
+
+# Android build
+/android
+
+# Generated icons
+/resources/android/icon
+/resources/android/splash
+/resources/blackberry10
+/resources/ios
+/resources/windows
