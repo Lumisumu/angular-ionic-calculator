@@ -26,7 +26,7 @@ Make build into new folder. You can replace android with another platform:
 ionic build android
 ```
 
-OPTIONAL: You can change app name in android/app/src/main/res/values/strings.xml, lines 3 and 4:
+OPTIONAL: You can change app name in android/app/src/main/res/values/strings.xml, lines 3 and 4.
 
 OPTIONAL: If you want to use your own app icon and/or splash, replace them in /resources and run:
 
