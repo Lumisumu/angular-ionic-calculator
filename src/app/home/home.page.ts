@@ -7,10 +7,10 @@ import { Clipboard } from '@awesome-cordova-plugins/clipboard/ngx';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  currentNumber: any = ''; //Number that is being typed
-  firstNumber: any = ''; //First number is stored here after the first operator is typed
+  currentNumber: any = '';
+  firstNumber: any = '';
   operator: any = null;
-  remainder: any = '0'; //jakojäännös
+  remainder: any = '0';
   result: any = null;
 
   operatorTyped = false;
