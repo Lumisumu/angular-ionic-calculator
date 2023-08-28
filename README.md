@@ -26,7 +26,13 @@ Make build into new folder. You can replace android with another platform:
 ionic build android
 ```
 
-If you want to use your own icon and splash, replace them in /resources. Copy icons to build folder:
+OPTIONAL: If you want to use your own app icon and/or splash, replace them in /resources and run:
+
+```
+capacitor-resources --platforms android
+```
+
+Copy icons to build folder:
 
 ```
 cordova-res android --skip-config --copy
